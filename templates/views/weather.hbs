@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{>head}}
+  <body>
+    <!-- -------------------------NAVBAR------------------------------------------------------ -->
+    <!-- class="d-inline-block align-top" -->
+    <!-- navbar-dark bg-dark -->
+    <div class="outerMost2">
+      <div class="container-fluid">
+        {{>navbar}}
+      </div>
+      <div class="weCon">
+        <div class="main_content">
+          <form action="" class="temp_form">
+            <input
+              type="text"
+              id="cityName"
+              placeholder="Enter Your city name"
+              autocomplete="off"
+            />
+            <input type="submit" value="search" id="submitBtn" />
+          </form>
+        </div>
+        <div class="tempInfo">
+          <div class="top_layer">
+            <p id="day">Tuesday</p>
+            <p id="today_date">13 OCT</p>
+          </div>
+          <div class="main_layer">
+            <p id="city_name">Weather Information will be shown here!</p>
+            <div class="middle_layer data_hide">
+              <div class="ley">
+                <p id="temp_status">
+                  <i id="fa-cloud"></i>
+                </p>
+                <p id="temp"><span id="temp_realVal">0</span> <sup>o</sup> C</p>
+              </div>
+              <div class="dey">
+                <p>Min Temp:&nbsp; <span id="minTemp"></span><sup>o</sup> C</p>
+                <p>Max Temp:&nbsp;<span id="maxTemp"></span><sup>o</sup> C</p>
+                <p>Atmospheric Pressure:&nbsp; <span id="atm"></span> hpa</p>
+                <p>Humidity:&nbsp; <span id="hum"></span>%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="key">{{api_key}}</span>
+<!-- ----------------Footer------------------------ -->
+{{>footer}}
+
+    <!-- ------------------bootstrap js------------------ -->
+    {{>bsScript}}
+    <script src="js/main.js"></script>
+
+    {{!-- -----------------------MonthAndDate------------------- --}}
+    {{>dateMonth}}
+  </body>
+</html>

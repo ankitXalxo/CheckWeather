@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ {{>head}}
+  <body>
+    <!-- -------------------------NAVBAR------------------------------------------------------ -->
+    <!-- class="d-inline-block align-top" -->
+    <!-- navbar-dark bg-dark -->
+    <div class="outerMost">
+      <div class="container-fluid">
+          {{>navbar}}
+       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 left-con">
+            <h1 class="hero-title">Welcome to CheckWeather.com</h1>
+            <h2 class="hero-tag">Get The Latest Weather Updates Of Any City</h2>
+            <a href="/weather"><button class="hero-btn">Check NOW!</button></a>
+          </div>
+          <div class="col-md-6 col-sm-12 right-con">
+            <img src="Images/hero-img.svg" alt="hero-img" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    {{!-- ------------Footer------------------ --}}
+    {{>footer}}
+    <!-- ------------------bootstrap js------------------ -->
+   {{>bsScript}}
+    <script src="js/main.js"></script>
+  </body>
+</html>

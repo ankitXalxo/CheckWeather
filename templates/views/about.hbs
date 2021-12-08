@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{>head}}
+  <body>
+    <!-- -------------------------NAVBAR------------------------------------------------------ -->
+    <!-- class="d-inline-block align-top" -->
+    <!-- navbar-dark bg-dark -->
+    <div class="outerMost3">
+      <div class="container-fluid">
+         {{>navbar}}
+      </div>
+      <div class="aboutCon">
+        <div class="aboutDiv">
+          <h1>About Us</h1>
+          <p>
+            CheckWeather provides Temperature (unit:degree Celcius),Minimum
+            Temperature (unit:degree Celcius),Maximum Temperature (unit:degree
+            Celcius),Atmospheric Pressure (unit:hectoPascal) and Humidity
+            (unit:percentage) of any city of all around the world.Climatic
+            change has become a global concern over the last few decades.
+            Besides, these climatic changes affect life on the earth in various
+            ways. These climatic changes are having various impacts on the
+            ecosystem and ecology. Due to these changes, a number of species of
+            plants and animals have gone extinct.Disclaimer: CheckWeather uses
+            Weather API from OpenWeatherMap (https://openweathermap.org/).All
+            the data comes from the API and we take no responsibilty for the
+            data.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------Footer------------------------ -->
+    {{>footer}}
+    <!-- ------------------bootstrap js------------------ -->
+    {{>bsScript}}
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
